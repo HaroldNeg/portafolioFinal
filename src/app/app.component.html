@@ -1,0 +1,20 @@
+<input type="hidden" id="modo" value="claro">
+<div class="content" role="main">
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <div class="text-bg-light p-3">Portafolio Selecci&oacute;n Colombia
+          <img src="/assets/futbolColombia.png" class="img-thumbnail img-fluid" alt="colombia iconos" width="5%" height="5%">
+        </div>
+      </a>
+      <div class="d-flex">
+        <div class="form-check form-switch text-bg-light p-3">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" (click)="cambiarModo()">
+          <label class="form-check-label" for="flexSwitchCheckDefault"><i class="fas fa-moon"></i></label>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <app-selecciones></app-selecciones>
+
+</div>

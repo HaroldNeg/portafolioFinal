@@ -1,0 +1,28 @@
+<div class="container">
+  <div [attr.id]="'carousel'+id" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item" [ngClass]="{'show active': idx === activeIndex}" *ngFor="let c of competicion; let idx=index">
+        <div class="container" style="padding:20px;">
+          <div class="card">
+            <div class="card-header text-bg-light">{{c.nombre}}</div>
+            <div class="card-body">
+              <app-logros [logro] = "c.logros"></app-logros>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carousel'+id" data-bs-slide="prev"
+      style="width: 0%;">
+      <span class="carousel-control-prev-icon btn btn-dark" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carousel'+id" data-bs-slide="next"
+      style="width: 0%;">
+      <span class="carousel-control-next-icon btn btn-dark" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+.main-wrapper {
+  position: relative;
+  padding-bottom: 8em;
+}
+
+.wrapper {
+  overflow: hidden;
+  padding: 15px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+body.darkmode {
+  background-color: RGBA(33,37,41,var(--bs-bg-opacity,1)) !important;
+  --text-bg-dark : white;
+  color: white;
+}
+
+.darkmode .text-bg-light {
+  color: #fff !important;
+  background-color:  RGBA(33,37,41,var(--bs-bg-opacity,1)) !important;
+}
+
+.darkmode .img-thumbnail {
+  background-color: RGBA(33,37,41,var(--bs-bg-opacity,1)) !important;
+}
+
+.darkmode .nav-tabs {
+  --bs-nav-tabs-border-color: #212529;
+  --bs-nav-tabs-link-hover-border-color: #e9ecef #161310 #212529;
+  --bs-nav-tabs-link-active-color: #b6afa8;
+  --bs-nav-tabs-link-active-bg: #000;
+  --bs-nav-tabs-link-active-border-color: #212529 #212529 #000;
+  border-bottom: 1px solid #212529;
+}
+.darkmode .nav {
+  --bs-nav-link-color: #f29120;
+  --bs-nav-link-hover-color: #f5a735;
+  --bs-nav-link-disabled-color: #938a82;
+}
+
+.darkmode .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: var(--bs-nav-tabs-link-active-color);
+  background-color: var(--bs-nav-tabs-link-active-bg);
+  border-color: var(--bs-nav-tabs-link-active-border-color);
+}
+.darkmode .nav-tabs .nav-link {
+  background: 0 0;
+    background-color: rgba(255, 255, 255, 1);
+}
+.darkmode .nav-link {
+  color: var(--bs-nav-link-color);
+}
+
+.darkmode .carousel-control-next, .carousel-control-prev {
+  color: #fff;
+}
+
+.darkmode .card {
+  --bs-card-border-color: rgba(255, 255, 255, 0.825);
+  --bs-card-cap-bg: rgba(255, 255, 255, 0.97);
+  --bs-card-bg: #212529;
+  --bs-card-border-width: 1px;
+  background-color: var(--bs-card-bg);
+  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+.darkmode .card-header {
+  color: var(--bs-card-cap-color);
+  background-color: var(--bs-card-cap-bg);
+  border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+.darkmode .card-body {
+  color: var(--bs-card-color);
+}
+
+.darkmode .text-muted {
+  color: #938a82;
+}
